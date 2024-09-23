@@ -1,0 +1,53 @@
+{% extends ":"~template~":base.html.twig" %}
+
+{% block content %}
+<header data-section-wrapper="1">
+  <div data-section="1">
+    <div class="container" data-slot-container="1">
+      <div data-slot="text">
+        <img class="logo" src="{{ getAssetUrl('themes/'~template~'/assets/logo_260x55.png') }}">
+				<h1>{pagetitle}
+				</h1>
+      </div>
+    </div>
+  </div>
+</header>
+<section data-section-wrapper="1">
+	<div data-section="1">
+		<div data-slot-container="1">
+			<div data-slot="text">
+				<h3>Cuprins:
+				</h3>
+				<p>Descrierea rezultatului - ce anume dorim să obţinem
+				</p>
+				<p>Cum creăm efectiv email-ul adăugând conţinutul dinamic
+				</p>
+				<br>
+				<span class="fr-gatedvideo fr-dvi fr-draggable" contenteditable="false"><iframe class="video" title="Am creeat un email cu conţinut dinamic" src="https://www.youtube.com/embed/_1iwXeHjCZc?feature=oembed" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" frameborder="0"> </iframe></span>
+				<img src="{{ getAssetUrl('themes/'~template~'/assets/logo_260x55.png') }}" class="fr-fic fr-dii" alt="Mautic Campania Magnet Email">
+			</div>
+		</div>
+	</div>
+</section>
+<footer data-section-wrapper="1">
+  <div data-section="1">
+    <div class="container" data-slot-container="1">
+      <div data-slot="text">
+        <div>
+          <img class="logo fr-fic fr-dii" src="{{ getAssetUrl('themes/'~template~'/assets/logo_260x55.png') }}">
+					<h2>Ionuţ Ojică</h2>
+					Willy-Brandt-Allee 38
+					<br>74523 Schwäbisch Hall</div>
+        <div><h2>Legături</h2>
+					<a href="https://ionutojica.com/termeni-si-conditii/" rel="noopener noreferrer" target="_blank">Termeni şi condiţii</a>
+					<br><a href="https://ionutojica.com/politica-de-confidentialitate/" rel="noopener noreferrer" target="_blank">Politica de confidenţialitate</a>
+					<br>
+					<a href="https://www.facebook.com/IonutOjicaDE/"><img class="fr-fic fr-dii" src="{{getAssetUrl('themes/'~template~'/icon_an_32/facebook.png')}}"></a>
+					<a href="https://www.youtube.com/c/IonutOjicaDE/"><img class="fr-fic fr-dii" src="{{getAssetUrl('themes/'~template~'/icon_an_32/youtube.png')}}"></a>
+					<br>&copy; 2023 Ionuţ Ojică
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+{% endblock %}

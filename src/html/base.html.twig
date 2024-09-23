@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	{% if page is defined %}
+	<title>{pagetitle}</title>
+	<meta name="description" content="{pagemetadescription}">
+	<meta charset="UTF-8">
+	{% endif %}
+	{% block stylesheets %}
+		<link rel="stylesheet" href="{{ getAssetUrl('themes/'~template~'/css/style.css') }}" type="text/css" />
+	{% endblock stylesheets %}
+  <script type="text/javascript" src="{{ getAssetUrl('themes/'~template~'/js/extras.js')}}"></script>
+	{{ outputHeadDeclarations() }}
+</head>
+<body>
+	{{ outputScripts('bodyOpen') }}
+	{% block content %}{% endblock %}
+	{{ outputScripts('bodyClose') }}
+</body>
+</html>
